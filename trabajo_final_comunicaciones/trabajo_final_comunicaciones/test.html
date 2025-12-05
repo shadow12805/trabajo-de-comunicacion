@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index1.css">
+    <title>Test de Funcionalidad</title>
+</head>
+<body>
+
+<header class="site-header">
+    <div class="container">
+        <div class="header-inner">
+            <div class="brand">Test Hub</div>
+            <div class="nav-actions">
+                <button class="theme-toggle" title="Alternar tema oscuro">🌙</button>
+                <button class="login-btn" id="loginBtn">Iniciar sesión</button>
+            </div>
+        </div>
+    </div>
+</header>
+
+<main style="padding: 40px; text-align: center;">
+    <h1>Página de Prueba</h1>
+    <p style="color: var(--text);">Haz click en los botones para probar:</p>
+    <ul style="list-style: none; padding: 0;">
+        <li>🌙 Botón de tema oscuro</li>
+        <li>🔐 Botón de iniciar sesión</li>
+    </ul>
+</main>
+
+<!-- LOGIN MODAL -->
+<div class="modal" id="loginModal">
+    <div class="modal-panel">
+        <button class="modal-close" id="modalClose">&times;</button>
+        <h2>Iniciar Sesión</h2>
+        <form class="auth-form" id="authForm">
+            <div class="form-group">
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" required placeholder="tu@correo.com">
+            </div>
+            <div class="form-group">
+                <label for="password">Contraseña:</label>
+                <input type="password" id="password" required placeholder="••••••••">
+            </div>
+            <button type="submit" class="btn primary">Ingresar</button>
+        </form>
+    </div>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        console.log('✅ DOM cargado');
+        
+        // Restore theme preference on load
+        if (localStorage.getItem('theme') === 'dark') {
+            document.body.classList.add('dark-mode');
+            console.log('✅ Tema oscuro restaurado');
+        }
+
+        // Theme toggle
+        const themeToggle = document.querySelector('.theme-toggle');
+        console.log('🌙 Botón tema:', themeToggle);
+        if (themeToggle) {
+            themeToggle.addEventListener('click', function(e) {
+                e.preventDefault();
+                console.log('✅ Botón tema clickeado');
+                document.body.classList.toggle('dark-mode');
+                localStorage.setItem('theme', document.body.classList.contains('dark-mode') ? 'dark' : 'light');
+                console.log('Tema actual:', document.body.classList.contains('dark-mode') ? 'OSCURO' : 'CLARO');
+            });
+        }
+
+        // Login modal
+        const loginBtn = document.getElementById('loginBtn');
+        const loginModal = document.getElementById('loginModal');
+        const modalClose = document.getElementById('modalClose');
+        const authForm = document.getElementById('authForm');
+
+        console.log('🔐 Botón login:', loginBtn);
+        console.log('📦 Modal:', loginModal);
+
+        if (loginBtn) {
+            loginBtn.addEventListener('click', function(e) {
+                e.preventDefault();
+                console.log('✅ Botón login clickeado - ABRIENDO MODAL');
+                loginModal.classList.add('active');
+                console.log('Modal clases:', loginModal.className);
+            });
+        }
+
+        if (modalClose) {
+            modalClose.addEventListener('click', function() {
+                console.log('✅ Botón cerrar clickeado');
+                loginModal.classList.remove('active');
+            });
+        }
+
+        if (loginModal) {
+            loginModal.addEventListener('click', function(e) {
+                if (e.target === loginModal) {
+                    console.log('✅ Fondo del modal clickeado');
+                    loginModal.classList.remove('active');
+                }
+            });
+        }
+
+        if (authForm) {
+            authForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                console.log('✅ Formulario enviado');
+                alert('¡Autenticación iniciada!');
+                loginModal.classList.remove('active');
+                authForm.reset();
+            });
+        }
+    });
+</script>
+
+</body>
+</html>

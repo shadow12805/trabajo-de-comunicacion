@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Investigación extendida sobre comunicación, teoría y aplicación en organizaciones">
+    <!-- Fuentes futuristas -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/index1.css">
+    <title>Investigación sobre Comunicación – Comunicaciones</title>
+</head>
+<body>
+
+<!-- BARRA LATERAL FIJA: Sobre Nosotros (extraída desde index.html) -->
+<aside id="leftSidebar" class="fixed-sidebar" aria-labelledby="aboutSidebarTitle">
+    <div class="sidebar-inner">
+        <h2 id="aboutSidebarTitle">Sobre Nosotros</h2>
+        <p class="muted">Equipo responsable del proyecto. Desarrollo sin uso de IA — trabajo humano y colaboración.</p>
+        <div class="sidebar-team">
+            <div class="team-member">
+                <div class="avatar"><img src="images/2.jpg" alt="Joseph Yotagri Ruiz" loading="lazy"></div>
+                <div class="member-info">
+                    <h4>Joseph Yotagri Ruiz</h4>
+                </div>
+                <div class="profile-popup" role="dialog" aria-hidden="true">
+                    <h4>Joseph Yotagri Ruiz</h4>
+                    <p>Diseño visual, selección de paleta y maquetado HTML/CSS. Responsable del estilo y la maquetación.</p>
+                </div>
+            </div>
+            <div class="team-member">
+                <div class="avatar"><img src="images/3.jpg" alt="Camilo Rivera Carmona" loading="lazy"></div>
+                <div class="member-info">
+                    <h4>Camilo Rivera Carmona</h4>
+                </div>
+                <div class="profile-popup" role="dialog" aria-hidden="true">
+                    <h4>Camilo Rivera Carmona</h4>
+                    <p>Implementó la lógica en JavaScript: renderizado de tarjetas, navegación y funciones interactivas.</p>
+                </div>
+            </div>
+            <div class="team-member">
+                <div class="avatar"><img src="images/1.jpg" alt="Jader Piedrahita Buitrago" loading="lazy"></div>
+                <div class="member-info">
+                    <h4>Jader Piedrahita Buitrago</h4>
+                </div>
+                <div class="profile-popup" role="dialog" aria-hidden="true">
+                    <h4>Jader Piedrahita Buitrago</h4>
+                    <p>Optimización responsive, animaciones y pruebas de usuario. Encargado de accesibilidad y pruebas.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</aside>
+
+<!-- HEADER / NAVEGACIÓN -->
+<header class="site-header">
+    <div class="container">
+        <div class="header-inner">
+            <div class="brand">ResearchHub</div>
+            <nav class="main-nav">
+                <a href="#introduccion">Introducción</a>
+                <a href="#pilares">Pilares</a>
+                <a href="#objetivos">Objetivos</a>
+                <a href="#video">Video</a>
+            </nav>
+            <div class="nav-actions">
+                <button class="theme-toggle" title="Alternar tema oscuro">🌙</button>
+                <button class="login-btn" id="loginBtn">Iniciar sesión</button>
+                <button class="menu-toggle" id="menuToggle">☰</button>
+            </div>
+        </div>
+    </div>
+</header>
+
+<main>
+
+    <!-- SECCIÓN: Introducción -->
+    <section id="introduccion" class="detail-section intro-section">
+        <div class="detail-card">
+            <h2>1. Introducción a la Comunicación</h2>
+            <p>
+                La comunicación es un proceso fundamental en la vida humana, considerado uno de los pilares que
+                permiten la interacción social, el desarrollo cultural y la transmisión de conocimientos entre generaciones.
+                A través de la comunicación, las personas comparten ideas, emociones, pensamientos y sensaciones,
+                utilizando diversos códigos, lenguajes y medios. Este proceso no solo ocurre mediante palabras, sino que
+                también incluye gestos, miradas, entonación, posturas y todo tipo de elementos que enriquecen
+                el mensaje.
+            </p>
+
+            <p>
+                Desde la antigüedad, la comunicación ha sido una herramienta de supervivencia, organización
+                social y evolución cultural. En la actualidad, con el avance de la tecnología, se ha expandido a nuevas
+                plataformas como redes sociales, correos electrónicos, mensajería instantánea, videollamadas y medios
+                digitales, que han transformado la manera en que el ser humano se relaciona y construye significado
+                con otros individuos.
+            </p>
+
+            <p>
+                Comprender el proceso comunicativo es fundamental en todos los contextos: académico, laboral,
+                familiar y social. Dominar la comunicación nos permite resolver conflictos, trabajar en equipo,
+                expresar nuestras ideas con claridad y establecer conexiones más sólidas con quienes nos rodean.
+                Por ello, estudiar la comunicación no solo nos sirve para hablar mejor, sino también para
+                escuchar, interpretar, analizar y reflexionar sobre los mensajes que recibimos diariamente.
+            </p>
+        </div>
+    </section>
+
+    <!-- SECCIÓN: Los 4 Pilares de la Comunicación -->
+    <section id="pilares" class="detail-section pilares-section">
+        <div class="detail-card">
+            <h2>1.1 Los 4 Pilares de la Comunicación</h2>
+            <p>
+                Los pilares de la comunicación representan los elementos esenciales que permiten que el proceso
+                comunicativo se lleve a cabo. Sin ellos, el intercambio de información sería imposible o ineficaz.
+                Estos cuatro componentes funcionan como un sistema interdependiente donde cada parte complementa
+                a las demás para lograr que el mensaje llegue correctamente al receptor.
+            </p>
+
+            <ul>
+                <li><strong>Emisor:</strong> es quien produce, organiza y envía el mensaje. Puede ser una persona,
+                    un grupo, una empresa o incluso una máquina.</li>
+                <li><strong>Receptor:</strong> es quien recibe el mensaje y le otorga un significado según
+                    su experiencia, contexto, percepción y conocimientos previos.</li>
+                <li><strong>Mensaje:</strong> es la información que se transmite; puede ser una idea, emoción,
+                    instrucción, relato, opinión o cualquier contenido simbólico.</li>
+                <li><strong>Código y canal:</strong> el código es el lenguaje utilizado (oral, escrito, visual,
+                    corporal), mientras que el canal es el medio por el cual se transmite.</li>
+            </ul>
+
+            <p>
+                Estos elementos aseguran que el proceso comunicativo sea coherente y funcional. Cuando alguno
+                falla, aparecen malentendidos, confusiones o interrupciones en el intercambio de información,
+                lo cual se considera un fallo comunicacional.
+            </p>
+        </div>
+    </section>
+
+    <!-- SECCIÓN: Objetivo de la Comunicación -->
+    <section id="objetivos" class="detail-section objetivos-section">
+        <div class="detail-card">
+            <h2>1.2 Objetivo de la Comunicación</h2>
+            <p>
+                El objetivo principal de la comunicación es lograr que el mensaje sea comprendido. Sin embargo,
+                este objetivo se puede desglosar en diferentes intenciones comunicativas según el contexto en el
+                cual se emite el mensaje. La comunicación no siempre se realiza con el fin de informar; a veces
+                se busca emocionar, influir, entretener o incluso cuestionar al receptor.
+            </p>
+
+            <p>
+                Entre los objetivos más importantes se encuentran:
+            </p>
+
+            <ul>
+                <li><strong>Informar:</strong> transmitir datos, hechos o conocimientos útiles.</li>
+                <li><strong>Persuadir:</strong> influir en la actitud o pensamiento del receptor.</li>
+                <li><strong>Expresar:</strong> comunicar emociones, sentimientos o estados internos.</li>
+                <li><strong>Regular:</strong> establecer normas, órdenes o instrucciones.</li>
+                <li><strong>Entretener:</strong> generar diversión o recreación.</li>
+            </ul>
+
+            <p>
+                Cada objetivo requiere un tratamiento distinto del mensaje, escogiendo cuidadosamente el código,
+                el tono, el estilo y el canal para maximizar la efectividad comunicativa.
+            </p>
+        </div>
+    </section>
+
+    <!-- SECCIÓN: Tipos, Formas y Estilos -->
+    <section class="detail-section tipos-section">
+        <div class="detail-card">
+            <h2>1.3 Tipos, Formas y Estilos de Comunicación</h2>
+            <p>
+                Existen múltiples formas de clasificar la comunicación. Los tipos representan la manera en que
+                se expresa el mensaje; las formas se refieren a la relación entre los participantes; y los estilos
+                indican la actitud o comportamiento comunicativo del emisor. Esta diversidad permite adaptar la
+                comunicación según las necesidades del contexto.
+            </p>
+
+            <p><strong>Tipos de comunicación:</strong></p>
+            <ul>
+                <li><strong>Verbal:</strong> uso de palabras habladas o escritas.</li>
+                <li><strong>No verbal:</strong> gestos, movimientos, expresiones faciales, tono de voz.</li>
+                <li><strong>Visual:</strong> imágenes, gráficos, colores, símbolos.</li>
+                <li><strong>Auditiva:</strong> sonidos, música, señales auditivas.</li>
+            </ul>
+
+            <p><strong>Formas de comunicación:</strong></p>
+            <ul>
+                <li><strong>Intrapersonal:</strong> diálogo interno del individuo.</li>
+                <li><strong>Interpersonal:</strong> comunicación entre dos personas.</li>
+                <li><strong>Grupal:</strong> comunicación dentro de un grupo pequeño.</li>
+                <li><strong>Masiva:</strong> medios de comunicación dirigidos a grandes audiencias.</li>
+            </ul>
+
+            <p><strong>Estilos de comunicación:</strong></p>
+            <ul>
+                <li><strong>Asertivo:</strong> claro, directo y respetuoso.</li>
+                <li><strong>Pasivo:</strong> evita expresar ideas u opiniones.</li>
+                <li><strong>Agresivo:</strong> impone ideas sin considerar a los demás.</li>
+                <li><strong>Pasivo-agresivo:</strong> expresa desacuerdo de manera indirecta.</li>
+            </ul>
+
+            <p>
+                Comprender estos tipos, formas y estilos nos permite adaptarnos según la situación,
+                mejorando nuestra efectividad al comunicarnos.
+            </p>
+        </div>
+    </section>
+
+    <!-- VIDEO SECTION -->
+    <section id="video" class="video-section">
+        <h2>Material Complementario en Video</h2>
+        <div class="video-embed responsive-video">
+            <iframe width="560" height="315"
+                    src="https://www.youtube-nocookie.com/embed/nlfYj9VWeXA"
+                    title="YouTube video player"
+                    frameborder="0"
+                    loading="lazy"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="no-referrer-when-downgrade"
+                    allowfullscreen>
+            </iframe>
+        </div>
+        <p class="video-fallback">Si el reproductor no carga aquí, mira el video directamente en <a href="https://youtu.be/nlfYj9VWeXA" target="_blank" rel="noopener">YouTube</a>.</p>
+    </section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+    <div class="container">
+        <p>Proyecto Final de Comunicaciones — Todos los derechos reservados © 2025</p>
+    </div>
+</footer>
+
+<!-- LOGIN MODAL -->
+<div class="modal" id="loginModal">
+    <div class="modal-panel">
+        <button class="modal-close" id="modalClose">&times;</button>
+        <h2>Iniciar Sesión</h2>
+        <form class="auth-form" id="authForm">
+            <div class="form-group">
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" required placeholder="tu@correo.com">
+            </div>
+            <div class="form-group">
+                <label for="password">Contraseña:</label>
+                <input type="password" id="password" required placeholder="••••••••">
+            </div>
+            <button type="submit" class="btn primary">Ingresar</button>
+        </form>
+    </div>
+</div>
+
+<!-- SCRIPTS -->
+<!-- <script src="js/app.js"></script> -->
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        console.log('DOM loaded');
+        
+        // Restore theme preference on load
+        if (localStorage.getItem('theme') === 'dark') {
+            document.body.classList.add('dark-mode');
+        }
+
+        // Theme toggle
+        const themeToggle = document.querySelector('.theme-toggle');
+        console.log('Theme toggle button:', themeToggle);
+        if (themeToggle) {
+            themeToggle.addEventListener('click', function(e) {
+                console.log('Theme toggle clicked');
+                document.body.classList.toggle('dark-mode');
+                localStorage.setItem('theme', document.body.classList.contains('dark-mode') ? 'dark' : 'light');
+            });
+        }
+
+        // Login modal
+        const loginBtn = document.getElementById('loginBtn');
+        const loginModal = document.getElementById('loginModal');
+        const modalClose = document.getElementById('modalClose');
+        const authForm = document.getElementById('authForm');
+
+        console.log('Login button:', loginBtn);
+        console.log('Login modal:', loginModal);
+
+        if (loginBtn) {
+            loginBtn.addEventListener('click', function(e) {
+                e.preventDefault();
+                console.log('Login button clicked');
+                loginModal.classList.add('active');
+            });
+        }
+
+        if (modalClose) {
+            modalClose.addEventListener('click', function() {
+                console.log('Modal close clicked');
+                loginModal.classList.remove('active');
+            });
+        }
+
+        if (loginModal) {
+            loginModal.addEventListener('click', function(e) {
+                if (e.target === loginModal) {
+                    console.log('Modal background clicked');
+                    loginModal.classList.remove('active');
+                }
+            });
+        }
+
+        if (authForm) {
+            authForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                console.log('Form submitted');
+                alert('Autenticación iniciada. (Demo)');
+                loginModal.classList.remove('active');
+                authForm.reset();
+            });
+        }
+
+        // Menu toggle
+        const menuToggle = document.getElementById('menuToggle');
+        const mainNav = document.querySelector('.main-nav');
+
+        if (menuToggle && mainNav) {
+            menuToggle.addEventListener('click', function() {
+                console.log('Menu toggle clicked');
+                mainNav.classList.toggle('mobile-open');
+            });
+        }
+
+        // --- Profile popups (fixed, positioned via JS) ---
+        (function() {
+            const teamMembers = document.querySelectorAll('.fixed-sidebar .team-member');
+            const popupMap = new Map();
+
+            function closeAllPopups() {
+                document.querySelectorAll('.profile-popup.visible').forEach(p => {
+                    p.classList.remove('visible');
+                    p.setAttribute('aria-hidden', 'true');
+                });
+            }
+
+            function showPopupFor(member) {
+                const avatar = member.querySelector('.avatar');
+                const popup = popupMap.get(member);
+                if (!avatar || !popup) return;
+
+                // measure avatar position relative to viewport
+                const rect = avatar.getBoundingClientRect();
+
+                // temporarily show to measure size
+                popup.classList.add('visible');
+                popup.style.left = '0px';
+                popup.style.top = '0px';
+                popup.style.visibility = 'hidden';
+
+                const popupRect = popup.getBoundingClientRect();
+
+                // default position: to the right of avatar
+                let left = rect.right + 12;
+                let top = rect.top;
+
+                // if it would overflow right edge, position to the left
+                if (left + popupRect.width > window.innerWidth - 12) {
+                    left = rect.left - popupRect.width - 12;
+                }
+
+                // adjust vertical overflow
+                if (top + popupRect.height > window.innerHeight - 12) {
+                    top = Math.max(12, window.innerHeight - popupRect.height - 12);
+                }
+
+                // apply and show
+                popup.style.left = Math.round(left) + 'px';
+                popup.style.top = Math.round(top) + 'px';
+                popup.style.visibility = 'visible';
+                popup.setAttribute('aria-hidden', 'false');
+            }
+
+            // Move popup elements to body so they are not clipped by the sidebar's overflow
+            teamMembers.forEach(member => {
+                const popup = member.querySelector('.profile-popup');
+                if (popup) {
+                    popupMap.set(member, popup);
+                    document.body.appendChild(popup);
+                }
+            });
+
+            teamMembers.forEach(member => {
+                const avatar = member.querySelector('.avatar');
+                const popup = popupMap.get(member);
+                if (!avatar || !popup) return;
+
+                // pointer events (desktop)
+                member.addEventListener('pointerenter', function() {
+                    closeAllPopups();
+                    showPopupFor(member);
+                });
+                member.addEventListener('pointerleave', function() {
+                    popup.classList.remove('visible');
+                    popup.setAttribute('aria-hidden', 'true');
+                });
+
+                // keyboard accessibility
+                member.addEventListener('focusin', function() {
+                    closeAllPopups();
+                    showPopupFor(member);
+                });
+                member.addEventListener('focusout', function() {
+                    popup.classList.remove('visible');
+                    popup.setAttribute('aria-hidden', 'true');
+                });
+
+                // touch/click: toggle on click of avatar
+                avatar.addEventListener('click', function(e) {
+                    e.stopPropagation();
+                    if (popup.classList.contains('visible')) {
+                        popup.classList.remove('visible');
+                        popup.setAttribute('aria-hidden', 'true');
+                    } else {
+                        closeAllPopups();
+                        showPopupFor(member);
+                    }
+                });
+            });
+
+            // click outside closes popups
+            document.addEventListener('click', function(e) {
+                if (!e.target.closest('.fixed-sidebar')) {
+                    closeAllPopups();
+                }
+            });
+            // on resize/hscroll, close to avoid misplacement
+            window.addEventListener('resize', closeAllPopups);
+            window.addEventListener('scroll', closeAllPopups, { passive: true });
+        })();
+    });
+</script>
+
+</body>
+</html>
+
